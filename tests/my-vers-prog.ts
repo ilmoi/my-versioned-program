@@ -146,6 +146,6 @@ describe("my-vers-prog", () => {
     console.log("✅ fired off a lut tx", finalSig);
 
     //store tx json for inspection
-    await storeSig(conn, finalSig, 'lut_tx.json')
+    await storeSig(conn, finalSig, 'lut_tx')
   });
 });
