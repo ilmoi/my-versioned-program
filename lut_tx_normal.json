@@ -1,0 +1,286 @@
+{
+  "blockTime": 1666812383,
+  "meta": {
+    "err": null,
+    "fee": 0,
+    "innerInstructions": [],
+    "logMessages": [
+      "Program Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS invoke [1]",
+      "Program log: Instruction: Initialize",
+      "Program Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS consumed 15646 of 200000 compute units",
+      "Program Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS success"
+    ],
+    "postBalances": [
+      500000000000000000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "postTokenBalances": [],
+    "preBalances": [
+      500000000000000000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "preTokenBalances": [],
+    "rewards": [],
+    "status": {
+      "Ok": null
+    }
+  },
+  "slot": 3,
+  "transaction": {
+    "message": {
+      "accountKeys": [
+        {
+          "pubkey": "CsuafJ4VM8v2NvBVrWyc3pEHrTtJXrSzmMacLdnwPqbj",
+          "signer": true,
+          "source": "transaction",
+          "writable": true
+        },
+        {
+          "pubkey": "3CBPykhdHfB47vqiotWy9SMVdAfh9AyKw4Ck6zMFsj4J",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "51weXfhWn6gWbE3sc9rA3zrhN7de427pwEHLHBqNhpSN",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "55mrgQQreFLVYQWyHT5WMjUUkxeCMWhXvsc24Zq8FKn2",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "5reKpqBAG2FssNDL7oc3WngZLqTcQswesJtRyKoxKNqJ",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "5UUpzZEEpUkY4YGJxqwdwprTooiaxefKQhw7nKQYUJEX",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "67P31fANgVksWjLUyRNgXG1AoLr63wafjcLx9Mevjg7j",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "7Np4vtyT6n9T1puwxdtL9w8KGgymkPBFMNSH4HH1Zpfr",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "8Ecdkq4z7FhAdxUJNVhGnBuSF99cjJHBS8qU3diyueqg",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "8zBzK6JZMt4iDZ9vDvjkUTHxVGCPMVnKaV9zsya4qAwE",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "9tWYGg66aj96XUWQ9xAxipneEZqkjbnyX1yGT2GDjFpp",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "AeX1vKe6WzeEt4DR7eocsBsgHiRHjzqH4qjmAcHPvzwK",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "C66dJUYTRjrZeKzxT2f4pBfQXaH5Uf5oLDUbGVAhYvaB",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "DA8MDpR9DytSNJjMLknZR4pdadQKtwy21vvfUeSV8tkw",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "DE9Z9KyRJ9x9mxkQYSh7bgtHGmSHX7AYypGVBWq6dKct",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "DGD9mFD7Do88eh3CQfHRXpjF4hPwP2qPEfrGWKRGLstJ",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "Dq7SF9xuSyMFC2bgpGcfYxB43mfVH6EsJb9pTbhBv2Kq",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "DQpiwJ6wxdQ5a8kE2Qan2ohCnqoZVAA3DrYvLyJpkrV5",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "E2RGytCu6yu9L2eifm9Vp4im2MECHzMGRNgyKNmJQdVb",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "F8wrGyqMw3y7qE3cGHt2xQjnVPdQ2KL9ZEjuv8Jt7xqn",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "GnJyLvd1NLDC9xjAu6akHRrS9uw412nfFK7CAj7S28FD",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "H9A8ef6SG5y91iTXnBsF7BA1SXzXK9WRuHpZmGKUgYd8",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "HjRc2wDwowVxGQcLK4LeNWR7gBdx188AmPULZuDmQdfo",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "HvZuNakdL1By9RiX4h5pdnWTMEHxjrbDjBThgTUqPfZe",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "HxiQv4Fk79V1ve8Xp2tEwEbLVLS2HrSAoyTTHrWrKL7B",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        },
+        {
+          "pubkey": "rsKxrQs2Ye6MZWdbXBnQ1mrzh8VkwShGPEA1ASsF44W",
+          "signer": false,
+          "source": "transaction",
+          "writable": false
+        }
+      ],
+      "addressTableLookups": null,
+      "instructions": [
+        {
+          "accounts": [
+            "rsKxrQs2Ye6MZWdbXBnQ1mrzh8VkwShGPEA1ASsF44W",
+            "DGD9mFD7Do88eh3CQfHRXpjF4hPwP2qPEfrGWKRGLstJ",
+            "Dq7SF9xuSyMFC2bgpGcfYxB43mfVH6EsJb9pTbhBv2Kq",
+            "AeX1vKe6WzeEt4DR7eocsBsgHiRHjzqH4qjmAcHPvzwK",
+            "E2RGytCu6yu9L2eifm9Vp4im2MECHzMGRNgyKNmJQdVb",
+            "55mrgQQreFLVYQWyHT5WMjUUkxeCMWhXvsc24Zq8FKn2",
+            "DA8MDpR9DytSNJjMLknZR4pdadQKtwy21vvfUeSV8tkw",
+            "HxiQv4Fk79V1ve8Xp2tEwEbLVLS2HrSAoyTTHrWrKL7B",
+            "HvZuNakdL1By9RiX4h5pdnWTMEHxjrbDjBThgTUqPfZe",
+            "DE9Z9KyRJ9x9mxkQYSh7bgtHGmSHX7AYypGVBWq6dKct",
+            "8Ecdkq4z7FhAdxUJNVhGnBuSF99cjJHBS8qU3diyueqg",
+            "HjRc2wDwowVxGQcLK4LeNWR7gBdx188AmPULZuDmQdfo",
+            "3CBPykhdHfB47vqiotWy9SMVdAfh9AyKw4Ck6zMFsj4J",
+            "C66dJUYTRjrZeKzxT2f4pBfQXaH5Uf5oLDUbGVAhYvaB",
+            "5UUpzZEEpUkY4YGJxqwdwprTooiaxefKQhw7nKQYUJEX",
+            "H9A8ef6SG5y91iTXnBsF7BA1SXzXK9WRuHpZmGKUgYd8",
+            "67P31fANgVksWjLUyRNgXG1AoLr63wafjcLx9Mevjg7j",
+            "F8wrGyqMw3y7qE3cGHt2xQjnVPdQ2KL9ZEjuv8Jt7xqn",
+            "51weXfhWn6gWbE3sc9rA3zrhN7de427pwEHLHBqNhpSN",
+            "GnJyLvd1NLDC9xjAu6akHRrS9uw412nfFK7CAj7S28FD",
+            "7Np4vtyT6n9T1puwxdtL9w8KGgymkPBFMNSH4HH1Zpfr",
+            "9tWYGg66aj96XUWQ9xAxipneEZqkjbnyX1yGT2GDjFpp",
+            "DQpiwJ6wxdQ5a8kE2Qan2ohCnqoZVAA3DrYvLyJpkrV5",
+            "5reKpqBAG2FssNDL7oc3WngZLqTcQswesJtRyKoxKNqJ",
+            "8zBzK6JZMt4iDZ9vDvjkUTHxVGCPMVnKaV9zsya4qAwE"
+          ],
+          "data": "WPNHsFPyEMr",
+          "programId": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+        }
+      ],
+      "recentBlockhash": "BCE1x6yCZCtJbnT1smkD51vyaNJhVyBovaxrpBeaN8pZ"
+    },
+    "signatures": [
+      "4pZ8KgwiTqMi1n4ZTc1cwUspAahR31CQhgAiSQXPCNoyoruaz4EF8FfMg4W85tJ4FNEXiuaRqDRDviqHxNSv5xqb"
+    ]
+  },
+  "version": "legacy"
+}
