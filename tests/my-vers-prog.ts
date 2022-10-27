@@ -46,7 +46,7 @@ const sendV0Tx = async (conn: Connection, ixs: TransactionInstruction[], payer: 
 const storeSig = async (conn: Connection, sig: string, name: string) => {
   let fetchedTx;
   while (!fetchedTx) {
-    fetchedTx = await conn.getParsedTransaction(sig, {
+    fetchedTx = await conn.getTransaction(sig, {
       maxSupportedTransactionVersion: 0,
       commitment: 'confirmed'
     })
