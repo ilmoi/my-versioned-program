@@ -33,10 +33,14 @@ const sendV0Tx = async (conn: Connection, ixs: TransactionInstruction[], payer: 
   }).compileToV0Message(lookupTableAccounts)
   const tx = new VersionedTransaction(msg);
   tx.sign([payer])
-  const sig = await conn.sendTransaction(tx);
-  await conn.confirmTransaction(sig)
-  console.log('✅ tx successful', sig)
-  return sig;
+  try {
+    const sig = await conn.sendTransaction(tx, {skipPreflight: true});
+    await conn.confirmTransaction(sig)
+    console.log('✅ tx successful', sig)
+    return sig;
+  } catch (e) {
+    console.log('err', e)
+  }
 }
 
 const storeSig = async (conn: Connection, sig: string, name: string) => {
@@ -63,13 +67,21 @@ describe("my-vers-prog", () => {
 
   //dumny accounts
   const accs = [];
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 50; i++) {
     accs.push(Keypair.generate().publicKey)
   }
-  const accsObj = {};
+  const accsObj1 = {};
+  const accsObj2 = {};
   accs.forEach((acc, i) => {
-    accsObj[`play${i}`] = acc;
+    if (i < 25) {
+      accsObj1[`play${i}`] = acc;
+    } else {
+      accsObj2[`play${i-25}`] = acc;
+    }
   })
+
+  console.log('obj1 has', Object.keys(accsObj1))
+  console.log('obj2 has', Object.keys(accsObj2))
 
   it("Is initialized!", async () => {
     console.log('// --------------------------------------- fund payer (wallet cant manually sign0')
@@ -112,7 +124,7 @@ describe("my-vers-prog", () => {
       addresses: [
         payer.publicKey,
         SystemProgram.programId,
-        ...accs.slice(0, 20)
+        ...accs.slice(0, 25)
       ],
     });
     await sendV0Tx(conn, [lookupTableInst, extendInstruction1], payer);
@@ -122,7 +134,7 @@ describe("my-vers-prog", () => {
       authority: payer.publicKey,
       lookupTable: lookupTableAddress,
       addresses: [
-        ...accs.slice(20, 40)
+        ...accs.slice(25, 50)
       ],
     });
     await sendV0Tx(conn, [extendInstruction2], payer);
@@ -139,10 +151,11 @@ describe("my-vers-prog", () => {
     console.log('// --------------------------------------- fire off tx')
 
     // Add your test here.
-    const ix = await program.methods.initialize().accounts(accsObj).instruction();
+    const ix = await program.methods.initialize().accounts(accsObj1).instruction();
+    const ix2 = await program.methods.initialize().accounts(accsObj2).instruction();
     // console.log('ix is', JSON.stringify(ix, null, 4))
 
-    const finalSig = await sendV0Tx(conn, [ix], payer, [lookupTableAccount])
+    const finalSig = await sendV0Tx(conn, [ix, ix2], payer, [lookupTableAccount])
     console.log("✅ fired off a lut tx", finalSig);
 
     //store tx json for inspection
