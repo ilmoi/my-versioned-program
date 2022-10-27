@@ -46,7 +46,7 @@ const sendV0Tx = async (conn: Connection, ixs: TransactionInstruction[], payer: 
 const storeSig = async (conn: Connection, sig: string, name: string) => {
   let fetchedTx;
   while (!fetchedTx) {
-    fetchedTx = await conn.getTransaction(sig, {
+    fetchedTx = await conn.getParsedTransaction(sig, {
       maxSupportedTransactionVersion: 0,
       commitment: 'confirmed'
     })
@@ -159,6 +159,6 @@ describe("my-vers-prog", () => {
     console.log("✅ fired off a lut tx", finalSig);
 
     //store tx json for inspection
-    await storeSig(conn, finalSig, 'lut_tx')
+    await storeSig(conn, finalSig, 'lut_tx_parsed')
   });
 });
